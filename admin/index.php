@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="vh-100 " data-theme-version="dark">
+<body class="vh-100 " data-theme-version="light">
     <div class="authincation h-100">
         <div class="container-fluid h-100">
             <div class="row h-100">
@@ -32,11 +32,11 @@
 						<form action="#">
 							<div class="mb-4">
 								<label class="mb-1 text-dark">Email</label>
-								<input type="email" class="form-control form-control" value="hello@example.com">
+								<input type="email" class="form-control form-control" value="" required>
 							</div>
 							<div class="mb-4 position-relative">
 								<label class="mb-1 text-dark">Password</label>
-								<input type="password" id="dz-password" class="form-control" value="123456">
+								<input type="password" id="dz-password" class="form-control" value="" required>
 								<span class="show-pass eye">								
 									<i class="fa fa-eye-slash"></i>
 									<i class="fa fa-eye"></i>								
@@ -49,9 +49,6 @@
                             <div class="text-center mb-4">
                             <a href="page-forgot-password.html" class="btn-link text-primary">Forgot Password?</a>
                             </div>
-							
-							
-							
 						</form>
 					</div>
 				</div>
@@ -78,10 +75,7 @@
 <!-- Required vendors -->
  <script src="assets/vendor/global/global.min.js"></script>
 <script src="assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-<script src="assets/js/deznav-init.js"></script>
-<script src="assets/js/demo.js"></script>
-  <script src="assets/js/custom.js"></script>
-<script src="assets/js/styleSwitcher.js"></script>
+<script src="assets/js/custom.js"></script>
 
 </body>
 </html>
