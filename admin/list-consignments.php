@@ -14,6 +14,9 @@ $bread_crumbs = [
 			<div class="card">
 				<div class="card-header">
 					<h4 class="card-title">Consignments List</h4>
+					<div class="card-toolbox">
+						<a href="import-consignments" class="btn btn-warning">Import Consignments</a>
+					</div>
 				</div>
 				<div class="card-body">
 					<div class="table-responsive">

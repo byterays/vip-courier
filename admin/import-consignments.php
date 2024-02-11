@@ -1,6 +1,6 @@
 <?php 
 	$bread_crumbs=[
-		["text"=>"Consignments", "link"=>"list-consignment"],
+		["text"=>"Consignments", "link"=>"list-consignments"],
 		["text"=>"Import", "link"=>"#", "class"=>"active"],
 	]
 ?>
