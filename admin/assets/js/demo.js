@@ -221,8 +221,8 @@ function deleteAllCookie(reload = true)
 		
 		var logo2 = getCookie('logo_src2');
 		
-		if(logo != ''){
-			jQuery('.nav-header .logo-abbr').attr("src", logo);
+		if(logo2 != ''){
+			jQuery('.nav-header .logo-abbr').attr("src", logo2);
 		}
 		
 		if(logo2 != ''){

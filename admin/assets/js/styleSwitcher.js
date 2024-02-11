@@ -51,27 +51,8 @@ function addSwitcher()
     //change the theme version controller
     versionSelect.on('change', function() {
 		body.attr('data-theme-version', this.value);
-		
-		/* if(this.value === 'dark'){
-			//jQuery(".nav-header .logo-abbr").attr("src", "./images/logo-white.png");
-			jQuery(".nav-header .logo-compact").attr("src", "images/logo-text-white.png");
-			jQuery(".nav-header .brand-title").attr("src", "images/logo-text-white.png");
-			
-			setCookie('logo_src', './images/logo-white.png');
-			setCookie('logo_src2', 'images/logo-text-white.png');
-		}else{
-			jQuery(".nav-header .logo-abbr").attr("src", "./images/logo.png");
-			jQuery(".nav-header .logo-compact").attr("src", "images/logo-text.png");
-			jQuery(".nav-header .brand-title").attr("src", "images/logo-text.png");
-			
-			setCookie('logo_src', './images/logo.png');
-			setCookie('logo_src2', 'images/logo-text.png');
-		} */
-		
 		setCookie('version', this.value);
     }); 
-	
-	
 
     //change the sidebar position controller
     sidebarPositionSelect.on('change', function() {
@@ -151,10 +132,6 @@ function addSwitcher()
             }
         }
 		
-		/* if(this.value === "modern") {
-			//body.attr('data-sidebarbg') === "color_11"
-			body.attr("data-sidebarbg", "color_12");
-		} */
 
         body.attr('data-sidebar-style', this.value);
 
@@ -168,28 +145,6 @@ function addSwitcher()
 		
 		setCookie('sidebarStyle', this.value);
 	});
-
-    
-	
-	/* jQuery("#nav_header_color_1").on('click',function(){
-		jQuery(".nav-header .logo-abbr").attr("src", "./images/logo.png");
-		setCookie('logo_src', './images/logo.png');
-		return false;
-    }); */
-    
-	/* jQuery("#sidebar_color_2, #sidebar_color_3, #sidebar_color_4, #sidebar_color_5, #sidebar_color_6, #sidebar_color_7, #sidebar_color_8, #sidebar_color_9, #sidebar_color_10, #sidebar_color_11, #sidebar_color_12, #sidebar_color_13, #sidebar_color_14, #sidebar_color_15").on('click',function(){
-		jQuery(".nav-header .logo-abbr").attr("src", "./images/logo-white.png");
-		jQuery(".nav-header .brand-title").attr("src", "./images/logo-text-white.png");
-		setCookie('logo_src', './images/logo-white.png');
-		return false;
-    }); */
-   
-    /* jQuery("#nav_header_color_3").on('click',function(){
-		jQuery(".nav-header .logo-abbr").attr("src", "./images/logo-white.png");
-		setCookie('logo_src', './images/logo-white.png');
-		return false;
-    }); */
-
 	
 	//change the nav-header background controller
     $('input[name="navigation_header"]').on('click', function() {
