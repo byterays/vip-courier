@@ -1,7 +1,7 @@
 <?php
-session_start();
-require "secure.php";
+require_once "../config/init.php";
 require_once "../config/database.php";
+require "secure.php";
 
 $host = $config["database"]["host"];
 $db = $config["database"]["db"];
