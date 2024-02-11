@@ -6,8 +6,8 @@
 		<div class="content-body">
 			<div class="page-titles">
 				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="javascript:void(0)">Form</a></li>
-					<li class="breadcrumb-item active"><a href="javascript:void(0)">Form Elements</a></li>
+					<li class="breadcrumb-item"><a href="dashboard">Admin</a></li>
+					<li class="breadcrumb-item active"><a href="javascript:void(0)">Profile</a></li>
 				</ol>
 			</div>
 			<div class="container-fluid">
