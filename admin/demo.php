@@ -21,7 +21,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <!-- Custom Stylesheet -->
-    <link href="assets/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -2437,8 +2437,6 @@
 
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/deznav-init.js"></script>
-    <script src="assets/js/demo.js"></script>
-    <script src="assets/js/styleSwitcher.js"></script>
 </body>
 
 </html>

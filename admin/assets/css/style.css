@@ -43973,7 +43973,7 @@ table.dataTable thead th {
 }
 
 table.dataTable tbody td {
-  padding: 1.25rem 0.9375rem;
+  padding: 0.3rem;
   font-size: 15px;
   font-weight: 400;
   border-bottom: 0;
@@ -43988,7 +43988,7 @@ table.dataTable tbody td {
 @media only screen and (max-width: 87.5rem) {
   table.dataTable tbody td {
     font-size: 0.875rem;
-    padding: 0.5rem 0.9375rem;
+    padding: 0.1rem 0.5rem;
   }
 }
 

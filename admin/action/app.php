@@ -1,5 +1,5 @@
 <?php
-require_once "../config/init.php";
+session_start();
 require_once "../config/database.php";
 require "secure.php";
 

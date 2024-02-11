@@ -468,6 +468,14 @@ let dataSet = [
 		
 	// table row
 	var table = $('#dataTable1, #dataTable2, #dataTable3, #dataTable4,  #example3, #example4').DataTable({
+		pageLength:15,
+		fixedHeader: {
+			header: true,
+			headerOffset: $('.navbar').height(),
+			footer: true
+		},
+		
+		lengthMenu: [ [10, 15, 25, 50, -1], [10, 15, 25, 50, "All"] ],
 		language: {
 			paginate: {
 			  next: '<i class="fa-solid fa-angle-right"></i>',
@@ -477,6 +485,11 @@ let dataSet = [
 	});
 	$('#example tbody').on('click', 'tr', function () {
 		var data = table.row( this ).data();
+	});
+
+	$(window).resize(function(){
+		table.fixedHeader.disable(),
+		table.fixedHeader.enable();
 	});
    
 	// application table

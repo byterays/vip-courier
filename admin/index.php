@@ -1,5 +1,5 @@
 <?php 
-	require_once "config/init.php";
+	
 	if( isset($_SESSION["loggedin_userid"]) && @$_SESSION["loggedin_userid"]>0){
 		header("location:dashboard");
 		exit;
