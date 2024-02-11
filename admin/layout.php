@@ -10,8 +10,7 @@
 	<!-- PAGE TITLE HERE -->
 	<title>VIP Courier & Cargo</title>
 
-	<!-- FAVICONS ICON -->
-	<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+	
 	<link href="//fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 	<!-- Custom Stylesheet -->
 	<link href="assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
