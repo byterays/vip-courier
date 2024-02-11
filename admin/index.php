@@ -29,14 +29,14 @@
 							<h3 class="title">Sign In</h3>
 							<p>Sign in to your account</p>
 						</div>
-						<form action="#">
+						<form action="action/login" method="post">
 							<div class="mb-4">
 								<label class="mb-1 text-dark">Email</label>
-								<input type="email" class="form-control form-control" value="" required>
+								<input name="email" type="email" class="form-control form-control" value="" required>
 							</div>
 							<div class="mb-4 position-relative">
 								<label class="mb-1 text-dark">Password</label>
-								<input type="password" id="dz-password" class="form-control" value="" required>
+								<input name="password" type="password" id="dz-password" class="form-control" value="" required>
 								<span class="show-pass eye">								
 									<i class="fa fa-eye-slash"></i>
 									<i class="fa fa-eye"></i>								
@@ -52,13 +52,13 @@
 						</form>
 					</div>
 				</div>
-                <div class="col-xl-6 col-lg-6">
+                <div class="col-xl-6 d-none d-md-block">
 					<div class="pages-left h-100">
 						<div class="login-content">
 							<a href="index.html"><img src="assets/images/logo-full.png" class="mb-3 logo-dark" alt=""></a>
-							<a href="index.html"><img src="assets/images/logi-white.png" class="mb-3 logo-light" alt=""></a>
+							<a href="index.html"><img src="assets/images/logo-white.png" class="mb-3 logo-light" alt=""></a>
 							
-							<p>CRM dashboard uses line charts to visualize customer-related metrics and trends over time.</p>
+							
 						</div>
 						<div class="login-media text-center">
 							<img src="assets/images/login.png" alt="">
