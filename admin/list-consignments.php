@@ -1,8 +1,33 @@
+<?php ini_set('display_errors', 1); ?> 
 <?php
+
+require_once "config/init.php";
+require_once "config/database.php";
+
+
 $bread_crumbs = [
-	["text" => "Consignments", "link" => "#"],
+	["text" => "Consignments", "link" => "#", "class"=>""],
 	["text" => "View All", "link" => "#", "class" => "active"],
-]
+];
+
+
+
+$host = $config["database"]["host"];
+$db = $config["database"]["db"];
+$db_user = $config["database"]["user"];
+$db_password = $config["database"]["password"];
+$con = new PDO("mysql:host={$host};dbname={$db}", $db_user, $db_password);
+
+
+ $stmt = $con->prepare("select lrn_lookup.internal_lrn, lrn_lookup.`provider_lrn`, lrn_lookup.`provider`, lrn_lookup.`date_created`,  lrn_lookup.`updated_on`,
+ consignment.`order_date`,consignment.`sender_name`, consignment.`sender_phone`,consignment.`pickup_date`, consignment.`pickup_location`, 
+ consignment.`receiver_name`, consignment.`receiver_phone`, consignment.`delivery_location`, 
+ consignment.`delivery_date`, consignment.`status`  from lrn_lookup 
+ inner join consignment  on  lrn_lookup.`internal_lrn`=consignment.`lrn`
+ order by lrn_lookup.`updated_on` desc, lrn_lookup.`date_created` desc");
+ $stmt->execute();
+ $consignments = $stmt->fetchAll();
+
 ?>
 
 <?php ob_start(); ?>
@@ -29,23 +54,33 @@ $bread_crumbs = [
 									<th>Origin</th>
 									<th>Destination</th>
 									<th>Date</th>
+									<th>Delivery Date</th>
 									<th>Updated On</th>
 									<th>Status </th>
 								</tr>
 							</thead>
 							<tbody>
-								<?php for ($i = 0; $i < 100; $i++) : ?>
+								<?php foreach ($consignments as $data): ?>
 									<tr>
-										<td><?= ($i + 1) ?></td>
-										<td>12345</td>
-										<td>54605</td>
-										<td>Delhi</td>
-										<td>Noida</td>
-										<td>2024/04/25</td>
-										<td>2024/04/25</td>
-										<td><span class="badge light badge-success">Delivered</span></td>
+										<td></td>
+										<td><?=$data["internal_lrn"]?></td>
+										<td><?=$data["provider_lrn"]?></td>
+										<td>
+												<?=$data["sender_name"] ?><br/>
+												<?=$data["sender_phone"] ?><br/>
+												<?=$data["pickup_location"] ?>
+										</td>
+										<td>
+												<?=$data["receiver_name"] ?><br/>
+												<?=$data["receiver_phone"] ?><br/>
+												<?=$data["delivery_location"] ?>
+										</td>
+										<td><?=$data["order_date"]?></td>
+										<td><?=$data["delivery_date"]?></td>
+										<th><?=$data["updated_on"]?></th>
+										<td><span class="badge light badge-success"><?=$data["status"]?></span></td>
 									</tr>
-								<?php endfor; ?>
+								<?php endforeach; ?>
 
 							</tbody>
 						</table>

@@ -54,7 +54,7 @@
             <div class="page-titles">
                 <ol class="breadcrumb">
                     <?php foreach ($bread_crumbs as $bread) : ?>
-                        <li class="breadcrumb-item <?= $bread["class"] ?>"><a href="<?= $bread["link"] ?>"><?= $bread["text"] ?></a></li>
+                        <li class="breadcrumb-item <?= @$bread["class"] ?>"><a href="<?= @$bread["link"] ?>"><?= @$bread["text"] ?></a></li>
                     <?php endforeach; ?>
                 </ol>
             </div>

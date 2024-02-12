@@ -10,7 +10,7 @@
 		<!-- row -->
 		<div class="row">
 			<div class="col-xl-6 col-lg-6">
-				<form action="action/import" method="post" enctype="multipart/form-data">
+				<form action="action/import-consignments" method="post" enctype="multipart/form-data">
 					<div class="card">
 						<div class="card-header">
 							<h4 class="card-title">Import Consignments</h4>
