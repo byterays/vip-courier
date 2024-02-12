@@ -1,3 +1,4 @@
+<?php ini_set('display_errors', 1); ?> 
 <?php
 
 require_once "app.php";
@@ -21,9 +22,9 @@ if ($_FILES) {
 
         //echo "<hr/>";
 
-        $stmt = $con->prepare("INSERT INTO consignment (`lrn`, `sender_name`, `order_date`, `sender_phone`, `pickup_location`, `pickup_date`, `receiver_name`, `receiver_phone`, `delivery_location`, `delivery_date`, `date_created`, `status`) 
-                                                VALUES (?,?,?,?,?,?,?,?,?,?,?)");
-        $stmt->execute([$data[0], $data[3],$data[4],$data[5],$data[6],$data[7],$data[8],$data[9],  $data[10], date("Y-m-d hh:mm:ss"), $data[11]]);
+        $stmt = $con->prepare("INSERT INTO consignment (`lrn`, `order_date`, `sender_name`, `sender_phone`, `pickup_location`, `pickup_date`, `receiver_name`, `receiver_phone`, `delivery_location`, `delivery_date`, `date_created`, `status`) 
+                                                VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
+        $stmt->execute([$data[0], $data[2],$data[3],$data[4],$data[5],$data[6],$data[7],$data[8],$data[9], $data[10], date("Y-m-d hh:mm:ss"), $data[11]]);
 
     }
     ini_set('auto_detect_line_endings', FALSE);
