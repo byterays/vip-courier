@@ -1,0 +1,121 @@
+CRITICAL - 2024-02-12 06:27:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "default.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Admin.php(9): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Admin->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 06:27:26 --> ErrorException: Uncaught ErrorException: chmod(): Operation not permitted in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Log/Handlers/FileHandler.php:119
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Log/Handlers/FileHandler.php(119): chmod()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Log/Logger.php(293): CodeIgniter\Log\Handlers\FileHandler->handle()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Common.php(796): CodeIgniter\Log\Logger->log()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Debug/Exceptions.php(128): log_message()
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\View\Exceptions\ViewException
+Invalid file: "default.php"
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/View/View.php(244): CodeIgniter\View\View->render()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Common.php(1178): CodeIgniter\View\View->render()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/Admin.php(9): view()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\Admin->index()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+in SYSTEMPATH/Log/Handlers/FileHandler.php on line 119.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-12 06:29:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "default.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Admin.php(9): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Admin->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 06:30:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "default.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Admin.php(9): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Admin->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 06:31:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "default.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Admin.php(9): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Admin->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 06:31:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "default.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Admin.php(9): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Admin->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 06:31:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Admin.php(9): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Admin->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 06:32:12 --> ErrorException: include(theme/admin/components/top-header.php): Failed to open stream: No such file or directory
+in APPPATH/Views/admin/layout.php on line 44.
+ 1 APPPATH/Views/admin/layout.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/admin/layout.php(44): include()
+ 3 SYSTEMPATH/View/View.php(228): include('/mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Views/admin/layout.php')
+ 4 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render()
+ 6 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 7 APPPATH/Controllers/Admin.php(9): view()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Admin->index()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 06:32:36 --> ErrorException: Undefined variable $bread_crumbs
+in APPPATH/Views/admin/layout.php on line 55.
+ 1 APPPATH/Views/admin/layout.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Views/admin/layout.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Admin.php(9): view()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Admin->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 06:43:15 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::login(), 0 passed in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH/Controllers/Admin.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Admin->login()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 06:44:48 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::login(), 0 passed in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH/Controllers/Admin.php on line 19.
+ 1 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Admin->login()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

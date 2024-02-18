@@ -1,0 +1,1646 @@
+INFO - 2024-02-15 03:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 03:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 03:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 03:35:25 --> ErrorException: Undefined array key "internal_lrn"
+in APPPATH/Views/admin/dashboard.php on line 117.
+ 1 APPPATH/Views/admin/dashboard.php(117): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Views/admin/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/AdminController.php(32): view()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 03:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 03:47:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`lrn`)
+ORDER BY `id` DESC
+ LIMIT 20' at line 3 in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/ConsignmentsModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-15 03:47:46 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`lrn`)
+ORDER BY `id` DESC
+ LIMIT 20' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ConsignmentsModel.php(15): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 03:47:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`lrn`)
+ORDER BY `id` DESC
+ LIMIT 20' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Models/ConsignmentsModel.php(15): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 03:47:46 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`lrn`)
+ORDER BY `id` DESC
+ LIMIT 20' at line 3
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/ConsignmentsModel.php(15): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 03:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 03:48:47 --> mysqli_sql_exception: Unknown column 'consignment.lrn' in 'on clause' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/ConsignmentsModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-15 03:48:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ConsignmentsModel.php(15): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 03:48:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Models/ConsignmentsModel.php(15): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 03:48:47 --> [Caused by] mysqli_sql_exception: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/ConsignmentsModel.php(15): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 03:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 03:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 03:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 03:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 03:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 03:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 03:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 03:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 03:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 03:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 03:53:58 --> mysqli_sql_exception: Unknown column 'consignment.lrn' in 'on clause' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/ConsignmentsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-15 03:53:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ConsignmentsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 03:53:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Models/ConsignmentsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 03:53:58 --> [Caused by] mysqli_sql_exception: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/ConsignmentsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 03:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 03:54:11 --> mysqli_sql_exception: Unknown column 'consignment.lrn' in 'on clause' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/ConsignmentsModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-15 03:54:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ConsignmentsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 03:54:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Models/ConsignmentsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 03:54:11 --> [Caused by] mysqli_sql_exception: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/ConsignmentsModel.php(16): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 03:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 04:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 04:00:46 --> mysqli_sql_exception: Unknown column 'consignment.lrn' in 'on clause' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/ConsignmentsModel.php(20): CodeIgniter\BaseModel->findAll()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-15 04:00:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ConsignmentsModel.php(20): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 04:00:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Models/ConsignmentsModel.php(20): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 04:00:46 --> [Caused by] mysqli_sql_exception: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/ConsignmentsModel.php(20): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 04:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 04:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 04:06:52 --> mysqli_sql_exception: Unknown column 'consignment.lrn' in 'on clause' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/ConsignmentsModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-15 04:06:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/ConsignmentsModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 04:06:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/ConsignmentsModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 04:06:52 --> [Caused by] mysqli_sql_exception: Unknown column 'consignment.lrn' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/ConsignmentsModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 04:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 09:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 09:20:18 --> mysqli_sql_exception: Unknown column 'lrn_lookup.id' in 'order clause' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/ConsignmentsModel.php(21): CodeIgniter\BaseModel->findAll()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-02-15 09:20:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lrn_lookup.id' in 'order clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 4 APPPATH/Models/ConsignmentsModel.php(21): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 09:20:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'lrn_lookup.id' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Models/ConsignmentsModel.php(21): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 09:20:18 --> [Caused by] mysqli_sql_exception: Unknown column 'lrn_lookup.id' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(638): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Models/ConsignmentsModel.php(21): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 09:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 09:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 09:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 09:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 09:21:56 --> TypeError: Unsupported operand types: string + int
+in APPPATH/Views/admin/dashboard.php on line 116.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/AdminController.php(32): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 09:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 09:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 09:23:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+ORDER BY `consignments`.`id` DESC
+ LIMIT 20' at line 4 in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/ConsignmentsModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-02-15 09:23:45 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+ORDER BY `consignments`.`id` DESC
+ LIMIT 20' at line 4
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/ConsignmentsModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 09:23:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+ORDER BY `consignments`.`id` DESC
+ LIMIT 20' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/ConsignmentsModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 09:23:45 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+ORDER BY `consignments`.`id` DESC
+ LIMIT 20' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/ConsignmentsModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 09:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 09:23:54 --> TypeError: Unsupported operand types: string + int
+in APPPATH/Views/admin/dashboard.php on line 116.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/AdminController.php(32): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 09:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 09:24:57 --> TypeError: Unsupported operand types: string + int
+in APPPATH/Views/admin/dashboard.php on line 116.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/AdminController.php(32): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 09:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 09:25:12 --> TypeError: Unsupported operand types: string + int
+in APPPATH/Views/admin/dashboard.php on line 116.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/AdminController.php(32): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 09:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 09:25:24 --> ArgumentCountError: Too few arguments to function App\Models\ConsignmentsModel::ListAll(), 0 passed in /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/AdminController.php on line 20 and at least 1 expected
+in APPPATH/Models/ConsignmentsModel.php on line 12.
+ 1 APPPATH/Controllers/AdminController.php(20): App\Models\ConsignmentsModel->ListAll()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 09:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 09:25:40 --> TypeError: Unsupported operand types: string + int
+in APPPATH/Views/admin/dashboard.php on line 116.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/AdminController.php(32): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 09:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 09:26:04 --> TypeError: Unsupported operand types: string + int
+in APPPATH/Views/admin/dashboard.php on line 116.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/AdminController.php(35): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 09:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 09:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 09:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 09:26:57 --> Error: Cannot use object of type stdClass as array
+in APPPATH/Views/admin/dashboard.php on line 117.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/AdminController.php(36): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 09:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 09:27:39 --> Error: Cannot use object of type stdClass as array
+in APPPATH/Views/admin/dashboard.php on line 117.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/AdminController.php(36): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 09:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 09:28:08 --> ErrorException: Undefined array key "display_name"
+in APPPATH/Views/admin/partials/header.php on line 62.
+ 1 APPPATH/Views/admin/partials/header.php(62): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Views/admin/partials/header.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/admin/layout.php(44): view()
+ 6 SYSTEMPATH/View/View.php(228): include('/mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Views/admin/layout.php')
+ 7 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render()
+ 9 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+10 APPPATH/Controllers/AdminController.php(36): view()
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 09:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 09:28:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 09:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 09:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 09:29:02 --> ParseError: syntax error, unexpected token ";"
+in APPPATH/Views/admin/dashboard.php on line 118.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AdminController.php(36): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 09:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 09:29:11 --> ParseError: syntax error, unexpected token ";"
+in APPPATH/Views/admin/dashboard.php on line 118.
+ 1 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/AdminController.php(36): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\AdminController->dashboard()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 09:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 13:26:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "consignments/list.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ConsignmentsController.php(23): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 13:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 13:27:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "../admin/layout.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render()
+ 3 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/ConsignmentsController.php(23): view()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 13:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 13:29:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "consignments/import.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/ConsignmentsController.php(28): view()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->import()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 13:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 13:31:31 --> ErrorException: Undefined property: CodeIgniter\View\View::$session
+in APPPATH/Views/admin/partials/header.php on line 49.
+ 1 APPPATH/Views/admin/partials/header.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Views/admin/partials/header.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+ 5 APPPATH/Views/admin/layout.php(44): view()
+ 6 SYSTEMPATH/View/View.php(228): include('/mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Views/admin/layout.php')
+ 7 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render()
+ 9 SYSTEMPATH/Common.php(1178): CodeIgniter\View\View->render()
+10 APPPATH/Controllers/ConsignmentsController.php(37): view()
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->import()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 13:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 13:54:07 --> ErrorException: Undefined variable $con
+in APPPATH/Controllers/ConsignmentsController.php on line 49.
+ 1 APPPATH/Controllers/ConsignmentsController.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 13:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 13:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 14:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 14:06:23 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\ConsignmentsModel"
+in SYSTEMPATH/Model.php on line 766.
+ 1 SYSTEMPATH/Model.php(766): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+ 2 SYSTEMPATH/BaseModel.php(783): CodeIgniter\Model->doProtectFieldsForInsert()
+ 3 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 4 APPPATH/Models/ConsignmentsModel.php(27): CodeIgniter\Model->insert()
+ 5 APPPATH/Controllers/ConsignmentsController.php(52): App\Models\ConsignmentsModel->AddConsignment()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:07:48 --> mysqli_sql_exception: Unknown column 'internal_lrn' in 'field list' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/ConsignmentsModel.php(30): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(52): App\Models\ConsignmentsModel->AddConsignment()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-15 14:07:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'internal_lrn' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/ConsignmentsModel.php(30): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/ConsignmentsController.php(52): App\Models\ConsignmentsModel->AddConsignment()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:07:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'internal_lrn' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 APPPATH/Models/ConsignmentsModel.php(30): CodeIgniter\Model->insert()
+ 8 APPPATH/Controllers/ConsignmentsController.php(52): App\Models\ConsignmentsModel->AddConsignment()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:07:48 --> [Caused by] mysqli_sql_exception: Unknown column 'internal_lrn' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Models/ConsignmentsModel.php(30): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/ConsignmentsController.php(52): App\Models\ConsignmentsModel->AddConsignment()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:10:31 --> mysqli_sql_exception: Unknown column 'internal_lrn' in 'field list' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/ConsignmentsModel.php(29): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(52): App\Models\ConsignmentsModel->AddConsignment()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-15 14:10:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'internal_lrn' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/ConsignmentsModel.php(29): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/ConsignmentsController.php(52): App\Models\ConsignmentsModel->AddConsignment()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:10:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'internal_lrn' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 APPPATH/Models/ConsignmentsModel.php(29): CodeIgniter\Model->insert()
+ 8 APPPATH/Controllers/ConsignmentsController.php(52): App\Models\ConsignmentsModel->AddConsignment()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:10:31 --> [Caused by] mysqli_sql_exception: Unknown column 'internal_lrn' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Models/ConsignmentsModel.php(29): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/ConsignmentsController.php(52): App\Models\ConsignmentsModel->AddConsignment()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 14:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 14:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:12:02 --> mysqli_sql_exception: Unknown column 'internal_lrn' in 'field list' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/ConsignmentsModel.php(29): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(54): App\Models\ConsignmentsModel->AddConsignment()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-15 14:12:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'internal_lrn' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/ConsignmentsModel.php(29): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\ConsignmentsModel->AddConsignment()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:12:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'internal_lrn' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 APPPATH/Models/ConsignmentsModel.php(29): CodeIgniter\Model->insert()
+ 8 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\ConsignmentsModel->AddConsignment()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:12:02 --> [Caused by] mysqli_sql_exception: Unknown column 'internal_lrn' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Models/ConsignmentsModel.php(29): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\ConsignmentsModel->AddConsignment()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 14:14:22 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\LookupModel"
+in SYSTEMPATH/Model.php on line 766.
+ 1 SYSTEMPATH/Model.php(766): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+ 2 SYSTEMPATH/BaseModel.php(783): CodeIgniter\Model->doProtectFieldsForInsert()
+ 3 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 4 APPPATH/Models/LookupModel.php(14): CodeIgniter\Model->insert()
+ 5 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:14:38 --> mysqli_sql_exception: Unknown column 'internal_lrn' in 'field list' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-15 14:14:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'internal_lrn' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:14:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'internal_lrn' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 APPPATH/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+ 8 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:14:38 --> [Caused by] mysqli_sql_exception: Unknown column 'internal_lrn' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:15:06 --> mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-15 14:15:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:15:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 APPPATH/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+ 8 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:15:06 --> [Caused by] mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:15:28 --> mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-15 14:15:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:15:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 APPPATH/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+ 8 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:15:28 --> [Caused by] mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:16:37 --> mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-15 14:16:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 APPPATH/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:16:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 APPPATH/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+ 8 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+ 9 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+10 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:16:37 --> [Caused by] mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-15 14:17:22 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\LookupModel"
+in SYSTEMPATH/Model.php on line 766.
+ 1 SYSTEMPATH/Model.php(766): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+ 2 SYSTEMPATH/BaseModel.php(783): CodeIgniter\Model->doProtectFieldsForInsert()
+ 3 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 4 APPPATH/Models/LookupModel.php(15): CodeIgniter\Model->insert()
+ 5 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:18:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:18:08 --> mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#13 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-02-15 14:18:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 6 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 7 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:18:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 8 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 9 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:18:08 --> [Caused by] mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 9 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+10 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:18:37 --> mysqli_sql_exception: Duplicate entry '809901-254275220' for key 'PRIMARY' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#13 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-02-15 14:18:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '809901-254275220' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 6 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 7 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:18:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '809901-254275220' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 8 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 9 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:18:37 --> [Caused by] mysqli_sql_exception: Duplicate entry '809901-254275220' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 9 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+10 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:20:28 --> mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#13 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-02-15 14:20:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 6 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 7 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:20:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 8 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 9 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:20:28 --> [Caused by] mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 9 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+10 APPPATH/Controllers/ConsignmentsController.php(54): App\Models\LookupModel->AddLookupData()
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:21:08 --> ParseError: syntax error, unexpected token "{", expecting "("
+in APPPATH/Controllers/ConsignmentsController.php on line 58.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(899): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:22:11 --> mysqli_sql_exception: Duplicate entry '809901-254275220' for key 'PRIMARY' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#13 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-02-15 14:22:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '809901-254275220' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 6 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 7 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:22:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '809901-254275220' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 8 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 9 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:22:11 --> [Caused by] mysqli_sql_exception: Duplicate entry '809901-254275220' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 9 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+10 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:22:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 14:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 14:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:23:30 --> mysqli_sql_exception: Duplicate entry '809901-254275220' for key 'PRIMARY' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#13 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-02-15 14:23:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '809901-254275220' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 6 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 7 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:23:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '809901-254275220' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 8 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 9 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:23:30 --> [Caused by] mysqli_sql_exception: Duplicate entry '809901-254275220' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 9 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+10 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:23:47 --> mysqli_sql_exception: Duplicate entry '809901-254275220' for key 'PRIMARY' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#13 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-02-15 14:23:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '809901-254275220' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 6 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 7 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:23:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '809901-254275220' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 8 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 9 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:23:47 --> [Caused by] mysqli_sql_exception: Duplicate entry '809901-254275220' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 9 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+10 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 14:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:30:25 --> mysqli_sql_exception: Duplicate entry '809906-243823953' for key 'PRIMARY' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#13 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-02-15 14:30:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '809906-243823953' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 6 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 7 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:30:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '809906-243823953' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 8 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 9 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:30:25 --> [Caused by] mysqli_sql_exception: Duplicate entry '809906-243823953' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 9 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+10 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 14:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-15 14:31:01 --> mysqli_sql_exception: Duplicate entry '809906-243823953' for key 'PRIMARY' in /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(802): CodeIgniter\Model->doInsert()
+#6 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/Model.php(744): CodeIgniter\BaseModel->insert()
+#7 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/BaseModel.php(713): CodeIgniter\Model->insert()
+#8 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+#9 /mnt/d/DevelopmentCenter/PHP/vipci.lab/app/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+#10 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+#11 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#12 /mnt/d/DevelopmentCenter/PHP/vipci.lab/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#13 /mnt/d/DevelopmentCenter/PHP/vipci.lab/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-02-15 14:31:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '809906-243823953' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 6 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 7 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:31:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '809906-243823953' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 7 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 8 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+ 9 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+10 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+11 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-15 14:31:01 --> [Caused by] mysqli_sql_exception: Duplicate entry '809906-243823953' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(802): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(744): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->insert()
+ 9 APPPATH/Models/LookupModel.php(15): CodeIgniter\BaseModel->save()
+10 APPPATH/Controllers/ConsignmentsController.php(57): App\Models\LookupModel->AddLookupData()
+11 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\ConsignmentsController->postImport()
+12 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-15 14:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 14:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 14:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 14:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-15 14:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
