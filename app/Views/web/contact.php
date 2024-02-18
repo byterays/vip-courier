@@ -7372,7 +7372,7 @@
                         <section class="my-widget">
                             <div id="shipments-tracking" class="widget bdaia-widget widget_mc4wp_form_widget" style="">
                                 <div class="widget-inner">
-                                    <form class="form" action="vipcourierandcargo.com/contact-us/tracking" method="GET">
+                                    <form class="form" action="track" method="POST">
                                         <input type="hidden" name="_token" value="">
                                         <div class="bdaia-mc4wp-form-icon">
                                             <span class="bdaia-io text-primary" style="line-height: 0">
@@ -7400,7 +7400,7 @@
                                                 <input type="text" name="code" placeholder="AWB72704">
                                             </p>
                                             <p>
-                                                <input type="submit" class="btn btn-submit submit" value="Search" style=" ">
+                                                <input type="submit" class="btn btn-submit" value="Search" style=" ">
                                             </p>
                                         </div>
                                     </form>

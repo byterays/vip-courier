@@ -17,15 +17,16 @@ class AdminController extends BaseController
         $filter=array();
         $consignments = $consignmentsModel->ListAll($filter,1,10);
 
-        print_r($consignments);
-        exit;
+        // print_r($consignments);
+        // exit;
 
         $data = [
             "bread_crumbs" => [
                 ["text" => "Admin", "link" => "/", "class" => ""],
                 ["text" => "Dashboard", "link" => "/", "class" => "active"],
             ],           
-            "consignments" => $consignments
+            "consignments" => $consignments,
+            
         ];
 
         return view("admin/dashboard", $data);

@@ -926,11 +926,12 @@
         <div class="clearfix"></div>
         <!-- .slider-area -->
         <div class="bd-container-post entry-content-only" style="transform: none;">
-            <div class="bd-row" style="transform: none;">
-                <div id="shipments-tracking-page">
+            <div class="row">
+                <div class="col-md-12">
                     <div id="shipments-tracking" class="widget bdaia-widget widget_mc4wp_form_widget">
                         <div class="widget-inner">
-                            <form class="form" action="track" method="POST">
+                        <center>
+                        <form class="form" action="track" method="POST">
                                 <input type="hidden" name="_token" value="TGvpPCLBaCZ7D12Nel9HY4Hc2i9nhe7tWgGifp2x">
                                 <div class="bdaia-mc4wp-form-icon">
                                     <span class="bdaia-io text-primary" style="line-height: 0">
@@ -962,112 +963,121 @@
                                 </div>
                             </form>
                         </div>
+                        </center>    
+                       
+
+                        <?php if ($enable_tracking) : ?>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <table class="table tracking-details table-stripped">
+                                      
+                                        <tr>
+                                            <th>Tracking code (LRN)</th>
+                                            <td><?= @$lrn ?></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Status</th>
+                                            <td><?= $basic_details->status ?></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Pickup Location</th>
+                                            <td><?= $basic_details->origin_city ?></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Pickup Date</th>
+                                            <td> <?php
+                                                    $manifested_date = date_create($basic_details->manifested_date);
+                                                    echo date_format($manifested_date, 'Y-m-d H:i:s A');
+                                                    ?></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Manifest Date</th>
+                                            <td><?php
+                                                $pickup_date = date_create($basic_details->pickup_date);
+                                                echo date_format($pickup_date, 'Y-m-d H:i:s A');
+                                                ?></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Destination</th>
+                                            <td><?= $basic_details->destination_city ?></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Est. Delivery Date</th>
+                                            <td>
+                                                <?php
+                                                $estimated_date = date_create($basic_details->estimated_date);
+                                                echo date_format($estimated_date, 'Y-m-d H:i:s A');
+                                                ?>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Delivery Date</th>
+                                            <td>
+                                                <?php
+                                                $delivered_date = date_create($basic_details->delivered_date);
+                                                echo date_format($delivered_date, 'Y-m-d H:i:s A');
+                                                ?>
+                                            </td>
+                                        </tr>
+
+
+                                    </table>
+
+
+                                </div>
+                                <div class="col-lg-6">
+
+
+                                    <?php
+                                    $tracking_data = $full_details->data[0];
+                                    $current_index = $tracking_data->currentTrackIndex;
+                                    $tracking_states = $tracking_data->trackingStates;
+                                    $icons = ["fas fa-thumbs-up", "fas fa-truck",  "fas fa-motorcycle", "fas fa-check"];
+
+                                    foreach ($tracking_states as $key => $item_state) :
+                                    ?>
+                                        <div class="tracking-item <?= $key == $current_index ? 'tracking-active' : '' ?>">
+                                            <div class="tracking-icon <?= $key == $current_index ? 'status-active' : 'status-complete' ?>">
+                                                <i class="<?= $icons[$key] ?>"></i>
+                                            </div>
+                                            <div class="tracking-date"><strong><?= $item_state->label ?></strong></div>
+                                            <?php
+                                            $scans = $item_state->scans;
+                                            if ($scans != null) :
+                                                foreach ($scans as $detail) :
+                                            ?>
+
+                                                    <div class="tracking-content">
+                                                        <?= str_replace( "Delhivery", "VIPC&C", $detail->scanNslRemark) ?>
+                                                        <span>
+                                                            <?php
+                                                            $date = date_create($detail->scanDateTime);
+                                                            echo date_format($date, 'Y-m-d H:i:s A');
+                                                            ?>
+                                                        </span>
+                                                        <span><strong><?= $detail->cityLocation ?></strong></span>
+
+
+                                                    </div>
+                                            <?php
+                                                endforeach;
+                                            endif;
+                                            ?>
+                                        </div>
+                                    <?php
+                                    endforeach;
+                                    ?>
+
+                                </div>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div><!--#shipments-tracking-page -->
             </div>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <table class="table tracking-details table-stripped">
-                        <tr>
-                            <th>Status</th>
-                            <td><?= $basic_details->status ?></td>
-                        </tr>
-                        <tr>
-                            <th>Tracking code (LRN)</th>
-                            <td><?= @$lrn ?></td>
-                        </tr>
-                        <tr>
-                            <th>Pickup Location</th>
-                            <td><?= $basic_details->origin_city ?></td>
-                        </tr>
-                        <tr>
-                            <th>Pickup Date</th>
-                            <td> <?php
-                                $manifested_date = date_create($basic_details->manifested_date);
-                                echo date_format($manifested_date, 'Y-m-d H:i:s A');
-                                ?></td>
-                        </tr>
-                        <tr>
-                            <th>Manifest Date</th>
-                            <td><?php
-                                $pickup_date = date_create($basic_details->pickup_date);
-                                echo date_format($pickup_date, 'Y-m-d H:i:s A');
-                                ?></td>
-                        </tr>
-                        <tr>
-                            <th>Destination</th>
-                            <td><?= $basic_details->destination_city ?></td>
-                        </tr>
-                        <tr>
-                            <th>Est. Delivery Date</th>
-                            <td>
-                                <?php
-                                $estimated_date = date_create($basic_details->estimated_date);
-                                echo date_format($estimated_date, 'Y-m-d H:i:s A');
-                                ?>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Delivery Date</th>
-                            <td>
-                            <?php
-                                $delivered_date = date_create($basic_details->delivered_date);
-                                echo date_format($delivered_date, 'Y-m-d H:i:s A');
-                                ?>
-                            </td>
-                        </tr>
-
-                        
-                    </table>
-
-                   
-                </div>
-                <div class="col-lg-6">
 
 
-                    <?php
-                    $tracking_data = $full_details->data[0];
-                    $current_index = $tracking_data->currentTrackIndex;
-                    $tracking_states = $tracking_data->trackingStates;
-                    $icons = ["fas fa-thumbs-up", "fas fa-truck",  "fas fa-motorcycle", "fas fa-check"];
 
-                    foreach ($tracking_states as $key => $item_state) :
-                    ?>
-                        <div class="tracking-item <?= $key == $current_index ? 'tracking-active' : '' ?>">
-                            <div class="tracking-icon <?= $key == $current_index ? 'status-active' : 'status-complete' ?>">
-                                <i class="<?= $icons[$key] ?>"></i>
-                            </div>
-                            <div class="tracking-date"><strong><?= $item_state->label ?></strong></div>
-                            <?php
-                            $scans = $item_state->scans;
-                            if ($scans != null) :
-                                foreach ($scans as $detail) :
-                            ?>
-
-                                    <div class="tracking-content">
-                                        <?= $detail->scanNslRemark ?>
-                                        <span>
-                                            <?php
-                                            $date = date_create($detail->scanDateTime);
-                                            echo date_format($date, 'Y-m-d H:i:s A');
-                                            ?>
-                                        </span>
-                                        <span><strong><?= $detail->cityLocation ?></strong></span>
-
-
-                                    </div>
-                            <?php
-                                endforeach;
-                            endif;
-                            ?>
-                        </div>
-                    <?php
-                    endforeach;
-                    ?>
-
-                </div>
-            </div>
         </div>
     </div>
 

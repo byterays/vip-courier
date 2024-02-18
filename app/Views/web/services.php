@@ -1481,7 +1481,7 @@
                                                 <input type="text" name="code" placeholder="AWB72704">
                                             </p>
                                             <p>
-                                                <input type="submit" class="btn btn-submit submit" value="Search" style=" ">
+                                                <input type="submit" class="btn btn-submit" value="Search" style=" ">
                                             </p>
                                         </div>
                                     </form>

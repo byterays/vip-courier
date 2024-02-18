@@ -18864,6 +18864,7 @@ div.widget.bdaia-widget {
 div.widget.bdaia-widget .widget-inner {
   position: relative;
   display: block;
+  margin-bottom: 30px;
 }
 div.widget.bdaia-widget .widget-inner:before {
   display: table;
@@ -21400,9 +21401,9 @@ div.widget.bdaia-widget.bd-tweets .widget-inner .bdaia-io {
   clear: both;
 }
 
-.widget.bdaia-widget.widget_mc4wp_form_widget {
+/* .widget.bdaia-widget.widget_mc4wp_form_widget {
   text-align: center;
-}
+} */
 .widget.bdaia-widget.widget_mc4wp_form_widget .bdaia-mc4wp-form-icon span {
   font-size: 36px;
   line-height: 36px;
@@ -40658,7 +40659,8 @@ body:not(.bdaia-boxed) .articles-box.articles-box-dark .bd_f_button span._2:befo
     align-items: center;
 }
 #shipments-tracking {
-    width: 100%;
+  width: 100%;
+  margin-bottom: 40px;
 }
 #shipments-tracking-page .widget.bdaia-widget.widget_mc4wp_form_widget
 {

@@ -100,27 +100,31 @@
 						<table id="example4" class="display table">
 							<thead>
 								<tr>
-									<th>SN</th>
-									<th>Internal LRN</th>
-									<th>Provider LRN</th>
+									<th>In. LRN</th>
+									<th>Prv. LRN</th>
+									<th>Sender</th>
+									<th>Phone</th>
 									<th>Origin</th>
+									<th>Receiver</th>
+									<th>Rec. Phone</th>
 									<th>Destination</th>
-									<th>Date</th>
-									<th>Updated On</th>
 									<th>Status </th>
 								</tr>
 							</thead>
 							<tbody>
-								<?php foreach ($consignments as $key=>$data) : ?>
+								<?php foreach ($consignments as $key => $data) : ?>
 									<tr>
-										<td></td>
-										<td><?=$data->internal_lrn?></td>
-										<td><?=$data->provider_lrn?></td>
-										<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
+									<tr>
+										<td><?= $data["internal_lrn"] ?></td>
+										<td><?= $data["provider_lrn"] ?></td>
+										<td><?= $data["sender_name"] ?></td>
+										<td><?= $data["sender_phone"] ?></td>
+										<td><?= $data["pickup_location"] ?></td>
+										<td><?= $data["receiver_name"] ?></td>
+										<td><?= $data["receiver_phone"] ?></td>
+										<td><?= $data["delivery_location"] ?></td>
 										<td><span class="badge light badge-info">In Transit</span></td>
+									</tr>
 									</tr>
 								<?php endforeach; ?>
 
