@@ -1,2 +1,3 @@
 writeable/*
+app/
 .env
