@@ -20309,8 +20309,6 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   font-weight: 900;
 }
 
-
-
 .deznav .metismenu>li.mm-active>a .menu-icon svg path {
   stroke: var(--primary);
 }
@@ -43664,8 +43662,7 @@ code {
   border-color: #444444 !important;
 }
 
-.table tbody tr td {
-  vertical-align: middle;
+.table tbody tr td { 
   border-color: #E6E6E6;
   white-space: nowrap;
 }
