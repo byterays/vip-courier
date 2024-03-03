@@ -9,6 +9,7 @@
     <title>VIP Courier and Cargo :: Dashboard Panels</title>
 
     <link href="//fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <script src="//kit.fontawesome.com/713193a75f.js" crossorigin="anonymous"></script>
     <!-- Custom Stylesheet -->
     <link href="/assets/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
     <link href="/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
@@ -98,7 +99,7 @@
     <script src="/assets/vendor/datatables/js/jquery.dataTables.min.js"></script>
     <script src="//cdn.datatables.net/fixedheader/3.4.0/js/dataTables.fixedHeader.min.js"></script>
     <script src="/assets/js/plugins-init/datatables.init.js"></script>
-
+    
     <script src="/assets/js/custom.js"></script>
     <script src="/assets/js/deznav-init.js"></script>
 </body>

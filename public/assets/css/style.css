@@ -20299,7 +20299,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   fill: var(--primary);
 }
 
-.deznav .metismenu>li.mm-active>a {
+.deznav .metismenu>li.mm-active>a, .deznav .metismenu>li.mm-active>a i {
   color: var(--primary);
   background-color: rgba(13, 153, 255, 0.05);
   font-weight: 400;
@@ -20308,6 +20308,8 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 .deznav .metismenu>li.mm-active>a i {
   font-weight: 900;
 }
+
+
 
 .deznav .metismenu>li.mm-active>a .menu-icon svg path {
   stroke: var(--primary);
@@ -20931,10 +20933,10 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   transition: all 0.5s;
 }
 
-[data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu>li.mm-active>a i {
+/* [data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu>li.mm-active>a i {
   color: #fff;
   font-weight: 300;
-}
+} */
 
 [data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu>li .has-arrow:after {
   right: 1.5rem;
