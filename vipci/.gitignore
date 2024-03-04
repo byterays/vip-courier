@@ -1,3 +1,3 @@
 writeable/
-app/
+app/Database.php
 .env
