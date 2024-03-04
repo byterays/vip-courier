@@ -17,12 +17,6 @@ Sidebar start
 					<li><a href="<?= route_to("consignments.import") ?>">Import</a></li>
 					<li><a href="#">Add New</a></li>
 					<li><a href="<?= route_to("consignments.list") ?>">View All</a></li>
-
-					<!-- <li><a href="#">Requested</a></li>
-					<li><a href="#">Picked Up</a></li>
-					<li><a href="#">Manifested</a></li>
-					<li><a href="#">In Transit</a></li>
-					<li><a href="#">Delivered</a></li> -->
 				
 				</ul>
 			</li>
@@ -32,7 +26,7 @@ Sidebar start
 				</a>
 				<ul aria-expanded="false">					
 					<li><a href="#">Add New</a></li>
-					<li><a href="#">List All</a></li>
+					<li><a href="<?= route_to("customers.list") ?>">List All</a></li>
 				</ul>
 			</li>
 			

@@ -88,9 +88,11 @@ class ConsignmentsModel extends Model
         return json_decode($result);
     }
 
-    private function translate_lrn($internal_lrn, $provider)
+    private function translate_lrn($lrn, $provider="")
     {
-        $lrn = $this->where("internal_lrn", $internal_lrn)->first();
+        $lrn = $this->where("internal_lrn", $lrn)
+                    ->orWhere("provider_lrn", $lrn)
+                    ->first();
 
         if ($lrn) return $lrn["provider_lrn"];
 
