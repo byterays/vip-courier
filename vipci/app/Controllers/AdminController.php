@@ -48,7 +48,7 @@ class AdminController extends BaseController
                 ],
             ];
            
-            return redirect()->to("admin.dashboard");           
+            return redirect()->to("admin/dashboard");           
 
         } else {
             return redirect()->to("admin");

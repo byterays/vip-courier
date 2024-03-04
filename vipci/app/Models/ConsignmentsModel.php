@@ -94,6 +94,8 @@ class ConsignmentsModel extends Model
                     ->orWhere("provider_lrn", $lrn)
                     ->first();
 
+        
+
         if ($lrn) return $lrn["provider_lrn"];
 
         return false;

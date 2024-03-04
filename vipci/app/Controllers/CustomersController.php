@@ -6,15 +6,11 @@ use Exception;
 
 class CustomersController extends BaseController
 {
-
-    public function __construct(){
-
-      //  if (!$this->session->get("logged_in"))  return redirect()->to("admin");
-    }
+   
 
     public function index()
     {
-        
+        if (!$this->session->get("logged_in"))  return redirect()->to("admin");
         $model = model(\App\Models\CustomersModel::class);
 
         $filter = array();
