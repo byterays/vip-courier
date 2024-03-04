@@ -17,11 +17,14 @@ use CodeIgniter\Router\RouteCollection;
  $routes->post('admin/login', 'AdminController::login',['as' => 'login']);
  $routes->get('admin/logout', 'AdminController::logout', ['as' => 'logout']);
 
- $routes->get('/dashboard', 'AdminController::dashboard', ['as' => 'dashboard']);
+ $routes->group('admin', function($routes){
 
- $routes->get('/consignments', 'ConsignmentsController::index', ['as' => 'consignments.list']);
- $routes->get('/consignments/import', 'ConsignmentsController::import',      ['as' => 'consignments.import']);
- $routes->post('/consignments/import', 'ConsignmentsController::postImport', ['as' => 'consignments.import.save']);
+    $routes->get('dashboard', 'AdminController::dashboard', ['as' => 'dashboard']);
+    $routes->get('consignments', 'ConsignmentsController::index', ['as' => 'consignments.list']);
+    $routes->get('consignments/import', 'ConsignmentsController::import',      ['as' => 'consignments.import']);
+    $routes->post('consignments/import', 'ConsignmentsController::postImport', ['as' => 'consignments.import.save']);   
+   
+    $routes->get('customers', 'CustomersController::index', ['as' => 'customers.list']);
 
-
- $routes->get('/customers', 'CustomersController::index', ['as' => 'customers.list']);
+ });
+ 

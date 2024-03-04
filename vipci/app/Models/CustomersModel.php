@@ -11,7 +11,10 @@ class CustomersModel extends Model
     public function ListAll($page=1, $limit=20)
     {        
         $offset = ($page-1)* $limit;
-        $customers = $this->select("sender_phone")->groupBy("sender_phone")->offset($offset)->limit($limit)->get()->getResult();
+        $customers = $this->select("sender_name,sender_phone, count(*) consignments")->groupBy("sender_phone")
+        ->offset($offset)->limit($limit)
+        ->orderBy("id", "DESC")
+        ->get()->getResult();
        
         return $customers;
     }

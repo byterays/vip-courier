@@ -9,7 +9,7 @@ class CustomersController extends BaseController
 
     public function __construct(){
 
-        if (!$this->session->get("logged_in"))  return redirect()->to("admin");
+      //  if (!$this->session->get("logged_in"))  return redirect()->to("admin");
     }
 
     public function index()

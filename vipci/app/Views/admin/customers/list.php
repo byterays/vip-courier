@@ -24,14 +24,12 @@
 							</tr>
 						</thead>
 						<tbody>
-							<?php foreach ($customers as $key => $customer) : ?>
+							<?php foreach ($data as $key => $customer) : ?>
 								<tr>
-
-									<td></td>
+									<td><?=($key+1)?></td>
 									<td><?=$customer->sender_name?></td>
 									<td><?=$customer->sender_phone?></td>
-									<td></td>
-
+									<td><?=$customer->consignments?></td>
 								</tr>
 							<?php endforeach; ?>
 						</tbody>
